@@ -1,0 +1,153 @@
+{
+  "contracts": {
+    "Agorum": {
+      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "constructorCode": "608060405234801561001057600080fd5b50611f85806100206000396000f3fe",
+      "bodyBytecodeHash": "6d34d2305b5d55357de4081fe071d4481ac7e5e96ddc266907d2ec439dacb684",
+      "localBytecodeHash": "fed446266e9708912cc4fa347b62609cf46ee0f61a0570a672bf6f02b701ff28",
+      "deployedBytecodeHash": "fed446266e9708912cc4fa347b62609cf46ee0f61a0570a672bf6f02b701ff28",
+      "types": {
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_array:dyn<t_uint256>>": {
+          "id": "t_mapping<t_array:dyn<t_uint256>>",
+          "valueType": "t_array:dyn<t_uint256>",
+          "label": "mapping(key => uint256[])",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "adminAccount",
+          "astId": 3,
+          "type": "t_address",
+          "src": "68:28:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "name",
+          "astId": 5,
+          "type": "t_string",
+          "src": "100:18:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "symbol",
+          "astId": 7,
+          "type": "t_string",
+          "src": "122:20:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "standard",
+          "astId": 9,
+          "type": "t_string",
+          "src": "146:22:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "totalSupply",
+          "astId": 11,
+          "type": "t_uint256",
+          "src": "172:26:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "totalUpvotes",
+          "astId": 13,
+          "type": "t_uint256",
+          "src": "202:27:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "totalPosts",
+          "astId": 15,
+          "type": "t_uint256",
+          "src": "233:25:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "balanceOf",
+          "astId": 19,
+          "type": "t_mapping<t_uint256>",
+          "src": "262:44:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "allowance",
+          "astId": 25,
+          "type": "t_mapping<t_uint256>",
+          "src": "310:64:0"
+        },
+        {
+          "contract": "Agorum",
+          "path": "contracts\\Agorum.sol",
+          "label": "stakes",
+          "astId": 32,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "378:59:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "Agorum/Agorum": [
+      {
+        "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+        "version": "1.0.0",
+        "implementation": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+        "admin": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24"
+  }
+}
