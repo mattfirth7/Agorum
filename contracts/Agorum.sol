@@ -30,7 +30,7 @@ contract Agorum {
 	// allowance
 
 	function initialize() public {
-		adminAccount = 0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1;
+		adminAccount = 0x8704132217c1AB5b365938802eBA3feFBd3f255B;
 		name = "Agorum";
 		symbol = "AGRA";
 		standard = "Agorum v1.0.0";
